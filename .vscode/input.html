@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vital Monitor - Input Metrics</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/input.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Input Your Health Metrics</h1>
+    <form id="metricsForm">
+      <label for="age">Age:</label>
+      <input type="number" id="age" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="heartRate">Heart Rate (bpm):</label>
+      <input type="number" id="heartRate" required>
+
+      <label for="bloodPressure">Blood Pressure (mmHg):</label>
+      <input type="text" id="bloodPressure" placeholder="e.g., 120/80" required>
+
+      <label for="temperature">Body Temperature (°C):</label>
+      <input type="number" id="temperature" required>
+
+      <button type="submit">Submit</button>
+    </form>
+    <button id="backBtn">Previous</button>
+  </div>
+
+  <script src="scripts/input.js"></script>
+</body>
+</html>
